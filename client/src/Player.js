@@ -15,12 +15,15 @@ class Player {
     }
 
     move(canvas, keyValues) {
-        console.log(keyValues[0], ' ', this.xPos);
-        console.log(canvas.width);
+        console.log(this.xPos, this.yPos);
         if(keyValues[1] && this.xPos >= 0 && this.xPos + this.width < canvas.width) { this.xPos += this.xSpeed; }
         if(keyValues[0] && this.xPos > 0) { this.xPos -= this.xSpeed; }
-        if(keyValues[3] && this.yPos >= 0) { this.yPos += this.ySpeed };
-        if(keyValues[2]) { this.yPos -= this.ySpeed };  
+        
+        //up
+        if(keyValues[2] && this.yPos - this.ySpeed >= 0) { this.yPos -= this.ySpeed  };
+        //down
+        if(keyValues[3] && this.yPos >= 0 && this.yPos + this.height < canvas.height) { this.yPos += this.ySpeed };
+
 
     }
 }
