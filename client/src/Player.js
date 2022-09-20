@@ -22,7 +22,5 @@ class Player {
         if(keyValues[3] && this.yPos >= 0) { this.yPos += this.ySpeed };
         if(keyValues[2]) { this.yPos -= this.ySpeed };  
 
-
-
     }
 }
