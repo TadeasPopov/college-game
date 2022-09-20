@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "College game because we are bored.",
   "main": "server/college-game.js",
-  "repository": "https://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:x-oauth-basic@github.com/TadeasPopov/college-game.git",
+  "repository": "https://github.com/TadeasPopov/college-game.git",
   "author": "Tadeáš Popov <popov.t@email.cz>",
   "license": "GNU General Public License v3.0",
   "dependencies": {
