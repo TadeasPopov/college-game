@@ -68,7 +68,6 @@ class Canvas {
 	}
 
 	keyPressed(event) {
-		console.log(event.keyCode);
 		if(event.keyCode == LEFT_KEY) { leftKeyPressed = true; }
 
 		if(event.keyCode == RIGHT_KEY) { rightKeyPressed = true; }
